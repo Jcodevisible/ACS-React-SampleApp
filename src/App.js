@@ -23,7 +23,7 @@ class App extends React.Component {
         console.log("Azure Communication Services - User Access Tokens Quickstart")
         // This code demonstrates how to fetch your connection string
         // from an environment variable.
-        const connectionString = 'endpoint=https://jameelaesaacs.communication.azure.com/;accesskey=UBTzySbTNPSSAuy57xLsHeeeVrhQh+fS7Jh7IW5UoKIB1hmVMW4rBXzTZTzubbGsmfmtDW2pcsu/bZuvnPy1TA==';
+        const connectionString = '<YourConnectionString>';
         console.log(connectionString)
 
         // Instantiate the user token client
