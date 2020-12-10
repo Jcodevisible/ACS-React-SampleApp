@@ -7,8 +7,7 @@ import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.css';
 import { CallClient, CallAgent} from "@azure/communication-calling";
 import { AzureCommunicationUserCredential } from '@azure/communication-common';
-
-
+import AppSettings from './appsettings.json';
 
 const { CommunicationIdentityClient } = require('@azure/communication-administration');
 
@@ -22,14 +21,17 @@ class App extends React.Component {
     ////////////////////Issues User Token with scopes ////////////////////////////
     issueToken = async () => {
         console.log("Azure Communication Services - User Access Tokens Quickstart")
-        // This code demonstrates how to fetch your connection string
-        // from an environment variable.
-        const connectionString = '<YourConnectionString>';
-        console.log(connectionString)
+        // Place your connection string in the appsettings.json file
+        const connectionString = AppSettings.ResourceConnectionString;
+        
+        //Uncomment the below console log line to check 
+        //if your connectionstring was read from the appsettings.json file
+        //console.log(connectionString)
 
         // Instantiate the user token client
         const identityClient = new CommunicationIdentityClient(connectionString);
-        console.log(identityClient)
+        //Use the below line to display the identityClient in the console
+        // console.log(identityClient)
 
         let userResponse = await identityClient.createUser();
         console.log(`\nCreated a user with ID: ${userResponse.communicationUserId}`);
@@ -40,8 +42,8 @@ class App extends React.Component {
 
         const { token, expiresOn } = tokenResponse;
 
-        console.log(`\nIssued a token that expires at ${expiresOn}:`);
-        console.log(token);
+        // console.log(`\nIssued a token that expires at ${expiresOn}:`);
+        // console.log(token);
 
         this.setState({
             newtoken: (`\nIssued a token that expires at ${expiresOn}`),
