@@ -1,22 +1,22 @@
 {
-  "name": "contosojsapp-react",
+  "name": "ACS-REACT-SAMPLEAPP",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@azure/communication-administration": "file:../../../SDKs/NuGetPackages/javascript/communication-administration-1.0.0-dev.20200916.1.tgz",
-    "@azure/communication-calling": "file:../../../SDKs/NuGetPackages/javascript/communication-calling-1.2.0-dev.20200915.3.tgz",
-    "@azure/communication-chat": "file:../../../SDKs/NuGetPackages/javascript/communication-chat-1.0.0-dev.20200916.1.tgz",
-    "@azure/communication-common": "file:../../../SDKs/NuGetPackages/javascript/communication-common-1.0.0-dev.20200916.1.tgz",
-    "@azure/communication-signaling": "file:../../../SDKs/NuGetPackages/javascript/communication-signaling-1.0.0-dev.20200916.1.tgz",
-    "@azure/communication-sms": "file:../../../SDKs/NuGetPackages/javascript/communication-sms-1.0.0-dev.20200916.1.tgz",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "bootstrap": "^4.5.2",
-    "react": "^16.13.1",
-    "react-bootstrap": "^1.3.0",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "@azure/communication-administration": "^1.0.0-beta.3",
+    "@azure/communication-calling": "^1.0.0-beta.3",
+    "@azure/communication-chat": "^1.0.0-beta.3",
+    "@azure/communication-common": "^1.0.0-beta.3",
+    "@azure/communication-signaling": "^1.0.0-beta.3",
+    "@azure/communication-sms": "^1.0.0-beta.3",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "bootstrap": "^4.5.3",
+    "react": "^17.0.1",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,6 +40,6 @@
     ]
   },
   "devDependencies": {
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^4.2.0"
   }
 }
